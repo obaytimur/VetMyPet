@@ -12,6 +12,16 @@ struct Pet {
     var name: String
     var birthday: Date
     var sex: Sex
+    var age: Int {
+        calculateAge()
+    }
+    
+    private func calculateAge() -> Int {
+            let calendar = Calendar.current
+            let currentDate = Date()
+            let components = calendar.dateComponents([.year], from: birthday, to: currentDate)
+            return components.year ?? 0
+        }
     
     init(id: UUID = UUID(), name: String, birthday: Date, sex: Sex) {
         self.id = id

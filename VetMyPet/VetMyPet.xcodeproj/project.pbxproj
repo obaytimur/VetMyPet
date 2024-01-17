@@ -16,6 +16,10 @@
 		EE15C4622B56E18E00A8DE52 /* VetMyPetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE15C4612B56E18E00A8DE52 /* VetMyPetUITestsLaunchTests.swift */; };
 		EE15C4732B56E73300A8DE52 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE15C4722B56E73300A8DE52 /* Model.swift */; };
 		EE5C0F4F2B58754E0076223D /* PetInfoShort.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C0F4E2B58754E0076223D /* PetInfoShort.swift */; };
+		EE5C0F512B587CBE0076223D /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C0F502B587CBE0076223D /* ViewModifiers.swift */; };
+		EE5C0F532B587DA70076223D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C0F522B587DA70076223D /* Constants.swift */; };
+		EE5C0F552B5882390076223D /* lotusImg.png in Resources */ = {isa = PBXBuildFile; fileRef = EE5C0F542B5882390076223D /* lotusImg.png */; };
+		EE5C0F572B5885E10076223D /* downArrowIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EE5C0F562B5885E10076223D /* downArrowIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,11 @@
 		EE15C4612B56E18E00A8DE52 /* VetMyPetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetMyPetUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EE15C4722B56E73300A8DE52 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		EE5C0F4E2B58754E0076223D /* PetInfoShort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetInfoShort.swift; sourceTree = "<group>"; };
+		EE5C0F502B587CBE0076223D /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		EE5C0F522B587DA70076223D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EE5C0F542B5882390076223D /* lotusImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lotusImg.png; path = ../../../../../Desktop/lotusImg.png; sourceTree = "<group>"; };
+		EE5C0F562B5885E10076223D /* downArrowIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = downArrowIcon.png; path = ../../../../Desktop/downArrowIcon.png; sourceTree = "<group>"; };
+		EE5C0F582B5885E60076223D /* downArrowIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downArrowIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +113,7 @@
 				EE15C4702B56E36600A8DE52 /* ViewModels */,
 				EE15C46F2B56E35A00A8DE52 /* Views */,
 				EE15C4482B56E18E00A8DE52 /* Assets.xcassets */,
+				EE5C0F562B5885E10076223D /* downArrowIcon.png */,
 				EE15C44A2B56E18E00A8DE52 /* Preview Content */,
 			);
 			path = VetMyPet;
@@ -138,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				EE15C4722B56E73300A8DE52 /* Model.swift */,
+				EE5C0F522B587DA70076223D /* Constants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,6 +158,7 @@
 			children = (
 				EE15C4462B56E18D00A8DE52 /* ContentView.swift */,
 				EE5C0F4E2B58754E0076223D /* PetInfoShort.swift */,
+				EE5C0F502B587CBE0076223D /* ViewModifiers.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,6 +173,8 @@
 		EE15C4712B56E37000A8DE52 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				EE5C0F542B5882390076223D /* lotusImg.png */,
+				EE5C0F582B5885E60076223D /* downArrowIcon.png */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -269,8 +283,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5C0F572B5885E10076223D /* downArrowIcon.png in Resources */,
 				EE15C44C2B56E18E00A8DE52 /* Preview Assets.xcassets in Resources */,
 				EE15C4492B56E18E00A8DE52 /* Assets.xcassets in Resources */,
+				EE5C0F552B5882390076223D /* lotusImg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,10 +311,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5C0F512B587CBE0076223D /* ViewModifiers.swift in Sources */,
 				EE15C4732B56E73300A8DE52 /* Model.swift in Sources */,
 				EE15C4472B56E18D00A8DE52 /* ContentView.swift in Sources */,
 				EE5C0F4F2B58754E0076223D /* PetInfoShort.swift in Sources */,
 				EE15C4452B56E18D00A8DE52 /* VetMyPetApp.swift in Sources */,
+				EE5C0F532B587DA70076223D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
