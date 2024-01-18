@@ -17,11 +17,23 @@ struct TabBar: View {
             HStack {
                 ForEach(Tabs.allCases, id: \.rawValue) { tab in
                     Spacer()
-                    Image(selectedTab == tab ? filledImg : "\(tab)")}
+                    VStack {
+                        Image(selectedTab == tab ? filledImg : "\(tab)")
+                            .scaleEffect(selectedTab == tab ? 1.2 : 1.0)
+                        Text("\(tab.rawValue)")
+                            .font(.system(size: selectedTab == tab ? 14 : 12))
+                            .padding(.top, 1)
+                    }
+                    .onTapGesture {
+                        withAnimation(.easeIn(duration: 0.1)) {
+                            selectedTab = tab
+                        }
+                    }
                     Spacer()
+                }
             }
             .frame(width: nil, height: 60)
-            .background(Color(hex: 0xE8E8E8))
+            .background(Color(hex: 0xEEEEEE))
         }
     }
 }

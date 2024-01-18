@@ -14,16 +14,9 @@ struct PetsView: View {
     var body: some View {
         NavigationStack{
             VStack {
-                Text("Example")
+                listView
             }
             .navigationTitle("Pets")
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing){
-                    Button("About") {
-                        
-                    }
-                }
-            }
         }
     }
 }

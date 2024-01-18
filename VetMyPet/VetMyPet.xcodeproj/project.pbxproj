@@ -21,6 +21,7 @@
 		EEAA28A12B595AD400851176 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28A02B595AD400851176 /* TabBar.swift */; };
 		EEAA28A92B595DFE00851176 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28A82B595DFE00851176 /* HomeView.swift */; };
 		EEAA28AB2B595E1100851176 /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28AA2B595E1100851176 /* HealthView.swift */; };
+		EEAA28AF2B59724600851176 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28AE2B59724600851176 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		EEAA28A02B595AD400851176 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		EEAA28A82B595DFE00851176 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EEAA28AA2B595E1100851176 /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
+		EEAA28AE2B59724600851176 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 		EE15C46F2B56E35A00A8DE52 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EEAA28AE2B59724600851176 /* ContentView.swift */,
 				EEAA28AC2B595E2A00851176 /* Main Views */,
 				EEAA28AD2B595E4F00851176 /* Card Views */,
 				EE5C0F502B587CBE0076223D /* ViewModifiers.swift */,
@@ -332,6 +335,7 @@
 				EEAA28A12B595AD400851176 /* TabBar.swift in Sources */,
 				EE5C0F4F2B58754E0076223D /* PetInfoShort.swift in Sources */,
 				EE15C4452B56E18D00A8DE52 /* VetMyPetApp.swift in Sources */,
+				EEAA28AF2B59724600851176 /* ContentView.swift in Sources */,
 				EEAA289F2B5952DB00851176 /* PetsView.swift in Sources */,
 				EEAA28AB2B595E1100851176 /* HealthView.swift in Sources */,
 				EE5C0F532B587DA70076223D /* Constants.swift in Sources */,

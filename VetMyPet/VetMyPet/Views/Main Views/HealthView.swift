@@ -9,7 +9,12 @@ import SwiftUI
 
 struct HealthView: View {
     var body: some View {
-        Text("Health View")
+        NavigationStack{
+            VStack {
+                Text("Health View")
+            }
+            .navigationTitle("Health")
+        }
     }
 }
 
