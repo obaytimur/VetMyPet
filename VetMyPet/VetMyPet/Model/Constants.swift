@@ -9,9 +9,18 @@ import Foundation
 
 enum VariableConstants {
     static let ExPet = Pet(name: "Lotus", birthday: Date.now, sex: .female)
+    static let ExPet2 = Pet(name: "Lotus", birthday: Date.now, sex: .female)
+    
+    static let PetArray = [ExPet, ExPet2]
 }
 
 enum ViewConstants {
     static let petInfoShortWidth: CGFloat = 350
     static let petInfoShortHeight: CGFloat = 100
+}
+
+enum Tabs: String, CaseIterable {
+    case Home
+    case Health
+    case Pets
 }

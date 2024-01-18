@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Pet {
+struct Pet: Identifiable {
     var id = UUID()
     var name: String
     var birthday: Date

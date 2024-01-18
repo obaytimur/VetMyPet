@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EE15C4452B56E18D00A8DE52 /* VetMyPetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE15C4442B56E18D00A8DE52 /* VetMyPetApp.swift */; };
-		EE15C4472B56E18D00A8DE52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE15C4462B56E18D00A8DE52 /* ContentView.swift */; };
 		EE15C4492B56E18E00A8DE52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE15C4482B56E18E00A8DE52 /* Assets.xcassets */; };
 		EE15C44C2B56E18E00A8DE52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE15C44B2B56E18E00A8DE52 /* Preview Assets.xcassets */; };
 		EE15C4562B56E18E00A8DE52 /* VetMyPetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE15C4552B56E18E00A8DE52 /* VetMyPetTests.swift */; };
@@ -18,8 +17,10 @@
 		EE5C0F4F2B58754E0076223D /* PetInfoShort.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C0F4E2B58754E0076223D /* PetInfoShort.swift */; };
 		EE5C0F512B587CBE0076223D /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C0F502B587CBE0076223D /* ViewModifiers.swift */; };
 		EE5C0F532B587DA70076223D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C0F522B587DA70076223D /* Constants.swift */; };
-		EE5C0F552B5882390076223D /* lotusImg.png in Resources */ = {isa = PBXBuildFile; fileRef = EE5C0F542B5882390076223D /* lotusImg.png */; };
-		EE5C0F572B5885E10076223D /* downArrowIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EE5C0F562B5885E10076223D /* downArrowIcon.png */; };
+		EEAA289F2B5952DB00851176 /* PetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA289E2B5952DB00851176 /* PetsView.swift */; };
+		EEAA28A12B595AD400851176 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28A02B595AD400851176 /* TabBar.swift */; };
+		EEAA28A92B595DFE00851176 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28A82B595DFE00851176 /* HomeView.swift */; };
+		EEAA28AB2B595E1100851176 /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28AA2B595E1100851176 /* HealthView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,6 @@
 /* Begin PBXFileReference section */
 		EE15C4412B56E18D00A8DE52 /* VetMyPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VetMyPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE15C4442B56E18D00A8DE52 /* VetMyPetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetMyPetApp.swift; sourceTree = "<group>"; };
-		EE15C4462B56E18D00A8DE52 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE15C4482B56E18E00A8DE52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE15C44B2B56E18E00A8DE52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE15C4512B56E18E00A8DE52 /* VetMyPetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VetMyPetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,9 +54,10 @@
 		EE5C0F4E2B58754E0076223D /* PetInfoShort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetInfoShort.swift; sourceTree = "<group>"; };
 		EE5C0F502B587CBE0076223D /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		EE5C0F522B587DA70076223D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		EE5C0F542B5882390076223D /* lotusImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lotusImg.png; path = ../../../../../Desktop/lotusImg.png; sourceTree = "<group>"; };
-		EE5C0F562B5885E10076223D /* downArrowIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = downArrowIcon.png; path = ../../../../Desktop/downArrowIcon.png; sourceTree = "<group>"; };
-		EE5C0F582B5885E60076223D /* downArrowIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downArrowIcon.png; sourceTree = "<group>"; };
+		EEAA289E2B5952DB00851176 /* PetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsView.swift; sourceTree = "<group>"; };
+		EEAA28A02B595AD400851176 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		EEAA28A82B595DFE00851176 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EEAA28AA2B595E1100851176 /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +114,6 @@
 				EE15C4702B56E36600A8DE52 /* ViewModels */,
 				EE15C46F2B56E35A00A8DE52 /* Views */,
 				EE15C4482B56E18E00A8DE52 /* Assets.xcassets */,
-				EE5C0F562B5885E10076223D /* downArrowIcon.png */,
 				EE15C44A2B56E18E00A8DE52 /* Preview Content */,
 			);
 			path = VetMyPet;
@@ -156,8 +156,8 @@
 		EE15C46F2B56E35A00A8DE52 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EE15C4462B56E18D00A8DE52 /* ContentView.swift */,
-				EE5C0F4E2B58754E0076223D /* PetInfoShort.swift */,
+				EEAA28AC2B595E2A00851176 /* Main Views */,
+				EEAA28AD2B595E4F00851176 /* Card Views */,
 				EE5C0F502B587CBE0076223D /* ViewModifiers.swift */,
 			);
 			path = Views;
@@ -173,10 +173,27 @@
 		EE15C4712B56E37000A8DE52 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				EE5C0F542B5882390076223D /* lotusImg.png */,
-				EE5C0F582B5885E60076223D /* downArrowIcon.png */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		EEAA28AC2B595E2A00851176 /* Main Views */ = {
+			isa = PBXGroup;
+			children = (
+				EEAA28A82B595DFE00851176 /* HomeView.swift */,
+				EEAA28AA2B595E1100851176 /* HealthView.swift */,
+				EEAA289E2B5952DB00851176 /* PetsView.swift */,
+			);
+			path = "Main Views";
+			sourceTree = "<group>";
+		};
+		EEAA28AD2B595E4F00851176 /* Card Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE5C0F4E2B58754E0076223D /* PetInfoShort.swift */,
+				EEAA28A02B595AD400851176 /* TabBar.swift */,
+			);
+			path = "Card Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,10 +300,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE5C0F572B5885E10076223D /* downArrowIcon.png in Resources */,
 				EE15C44C2B56E18E00A8DE52 /* Preview Assets.xcassets in Resources */,
 				EE15C4492B56E18E00A8DE52 /* Assets.xcassets in Resources */,
-				EE5C0F552B5882390076223D /* lotusImg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,11 +326,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEAA28A92B595DFE00851176 /* HomeView.swift in Sources */,
 				EE5C0F512B587CBE0076223D /* ViewModifiers.swift in Sources */,
 				EE15C4732B56E73300A8DE52 /* Model.swift in Sources */,
-				EE15C4472B56E18D00A8DE52 /* ContentView.swift in Sources */,
+				EEAA28A12B595AD400851176 /* TabBar.swift in Sources */,
 				EE5C0F4F2B58754E0076223D /* PetInfoShort.swift in Sources */,
 				EE15C4452B56E18D00A8DE52 /* VetMyPetApp.swift in Sources */,
+				EEAA289F2B5952DB00851176 /* PetsView.swift in Sources */,
+				EEAA28AB2B595E1100851176 /* HealthView.swift in Sources */,
 				EE5C0F532B587DA70076223D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
