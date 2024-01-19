@@ -22,6 +22,9 @@
 		EEAA28A92B595DFE00851176 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28A82B595DFE00851176 /* HomeView.swift */; };
 		EEAA28AB2B595E1100851176 /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28AA2B595E1100851176 /* HealthView.swift */; };
 		EEAA28AF2B59724600851176 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28AE2B59724600851176 /* ContentView.swift */; };
+		EEAA28B12B59900900851176 /* PetInfoLong.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28B02B59900900851176 /* PetInfoLong.swift */; };
+		EEAA28B52B59939000851176 /* StyleModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28B42B59939000851176 /* StyleModifiers.swift */; };
+		EEAA28B72B5AF52600851176 /* DynamicPetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28B62B5AF52600851176 /* DynamicPetInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		EEAA28A82B595DFE00851176 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EEAA28AA2B595E1100851176 /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
 		EEAA28AE2B59724600851176 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EEAA28B02B59900900851176 /* PetInfoLong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetInfoLong.swift; sourceTree = "<group>"; };
+		EEAA28B42B59939000851176 /* StyleModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleModifiers.swift; sourceTree = "<group>"; };
+		EEAA28B62B5AF52600851176 /* DynamicPetInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicPetInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +167,7 @@
 				EEAA28AE2B59724600851176 /* ContentView.swift */,
 				EEAA28AC2B595E2A00851176 /* Main Views */,
 				EEAA28AD2B595E4F00851176 /* Card Views */,
-				EE5C0F502B587CBE0076223D /* ViewModifiers.swift */,
+				EEAA28B22B59936C00851176 /* Modifiers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,9 +200,20 @@
 			isa = PBXGroup;
 			children = (
 				EE5C0F4E2B58754E0076223D /* PetInfoShort.swift */,
+				EEAA28B02B59900900851176 /* PetInfoLong.swift */,
+				EEAA28B62B5AF52600851176 /* DynamicPetInfo.swift */,
 				EEAA28A02B595AD400851176 /* TabBar.swift */,
 			);
 			path = "Card Views";
+			sourceTree = "<group>";
+		};
+		EEAA28B22B59936C00851176 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				EE5C0F502B587CBE0076223D /* ViewModifiers.swift */,
+				EEAA28B42B59939000851176 /* StyleModifiers.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,12 +349,15 @@
 				EEAA28A92B595DFE00851176 /* HomeView.swift in Sources */,
 				EE5C0F512B587CBE0076223D /* ViewModifiers.swift in Sources */,
 				EE15C4732B56E73300A8DE52 /* Model.swift in Sources */,
+				EEAA28B72B5AF52600851176 /* DynamicPetInfo.swift in Sources */,
 				EEAA28A12B595AD400851176 /* TabBar.swift in Sources */,
 				EE5C0F4F2B58754E0076223D /* PetInfoShort.swift in Sources */,
+				EEAA28B12B59900900851176 /* PetInfoLong.swift in Sources */,
 				EE15C4452B56E18D00A8DE52 /* VetMyPetApp.swift in Sources */,
 				EEAA28AF2B59724600851176 /* ContentView.swift in Sources */,
 				EEAA289F2B5952DB00851176 /* PetsView.swift in Sources */,
 				EEAA28AB2B595E1100851176 /* HealthView.swift in Sources */,
+				EEAA28B52B59939000851176 /* StyleModifiers.swift in Sources */,
 				EE5C0F532B587DA70076223D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

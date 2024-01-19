@@ -13,7 +13,7 @@ struct PetInfoShort: View {
     
     var body: some View {
         HStack{
-            cardView
+            cardViewShort
         }.PetInfoCardShortCard()
     }
 }
@@ -25,7 +25,7 @@ struct PetInfoShort_Preview: PreviewProvider {
 }
 
 extension PetInfoShort {
-    private var cardView: some View {
+    private var cardViewShort: some View {
         HStack{
             Image("lotusImg")
                 .clipShape(Circle())

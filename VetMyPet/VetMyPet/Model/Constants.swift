@@ -17,6 +17,9 @@ enum VariableConstants {
 enum ViewConstants {
     static let petInfoShortWidth: CGFloat = 350
     static let petInfoShortHeight: CGFloat = 100
+    
+    static let petInfoLongWidth: CGFloat = 350
+    static let petInfoLongHeight: CGFloat = 300
 }
 
 enum Tabs: String, CaseIterable {

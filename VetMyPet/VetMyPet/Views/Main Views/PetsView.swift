@@ -31,8 +31,11 @@ extension PetsView {
     private var listView: some View {
         VStack {
             ForEach(VariableConstants.PetArray) { pet in
-                PetInfoShort(pet: pet)
+                HStack {
+                    DynamicPetInfo(pet: pet)
+                }
             }
+            Spacer()
         }
     }
 }
