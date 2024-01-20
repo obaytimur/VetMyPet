@@ -23,7 +23,7 @@ struct PetInfoCardShortModifier: ViewModifier {
             .frame(maxWidth: ViewConstants.petInfoShortWidth, maxHeight: ViewConstants.petInfoShortHeight)
             .background(RoundedRectangle(cornerRadius: 15).fill(Color(hex: 0xEBF2FD)))
             .clipShape(RoundedRectangle(cornerRadius: 15))
-            .padding()
+            
     }
 }
 
@@ -33,7 +33,7 @@ struct PetInfoCardLongModifier: ViewModifier {
             .frame(maxWidth: ViewConstants.petInfoLongWidth, maxHeight: ViewConstants.petInfoLongHeight)
             .background(RoundedRectangle(cornerRadius: 15).fill(Color(hex: 0xFFFFFF)))
             .clipShape(RoundedRectangle(cornerRadius: 15))
-            .padding()
+        
 
     }
 }
