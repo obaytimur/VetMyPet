@@ -14,7 +14,6 @@
 		EE15C4602B56E18E00A8DE52 /* VetMyPetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE15C45F2B56E18E00A8DE52 /* VetMyPetUITests.swift */; };
 		EE15C4622B56E18E00A8DE52 /* VetMyPetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE15C4612B56E18E00A8DE52 /* VetMyPetUITestsLaunchTests.swift */; };
 		EE15C4732B56E73300A8DE52 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE15C4722B56E73300A8DE52 /* Model.swift */; };
-		EE5C0F4F2B58754E0076223D /* PetInfoShort.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C0F4E2B58754E0076223D /* PetInfoShort.swift */; };
 		EE5C0F512B587CBE0076223D /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C0F502B587CBE0076223D /* ViewModifiers.swift */; };
 		EE5C0F532B587DA70076223D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C0F522B587DA70076223D /* Constants.swift */; };
 		EEAA289F2B5952DB00851176 /* PetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA289E2B5952DB00851176 /* PetsView.swift */; };
@@ -22,9 +21,8 @@
 		EEAA28A92B595DFE00851176 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28A82B595DFE00851176 /* HomeView.swift */; };
 		EEAA28AB2B595E1100851176 /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28AA2B595E1100851176 /* HealthView.swift */; };
 		EEAA28AF2B59724600851176 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28AE2B59724600851176 /* ContentView.swift */; };
-		EEAA28B12B59900900851176 /* PetInfoLong.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28B02B59900900851176 /* PetInfoLong.swift */; };
+		EEAA28B12B59900900851176 /* PetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28B02B59900900851176 /* PetInfo.swift */; };
 		EEAA28B52B59939000851176 /* StyleModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28B42B59939000851176 /* StyleModifiers.swift */; };
-		EEAA28B72B5AF52600851176 /* DynamicPetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28B62B5AF52600851176 /* DynamicPetInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +53,6 @@
 		EE15C45F2B56E18E00A8DE52 /* VetMyPetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetMyPetUITests.swift; sourceTree = "<group>"; };
 		EE15C4612B56E18E00A8DE52 /* VetMyPetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetMyPetUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EE15C4722B56E73300A8DE52 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		EE5C0F4E2B58754E0076223D /* PetInfoShort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetInfoShort.swift; sourceTree = "<group>"; };
 		EE5C0F502B587CBE0076223D /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		EE5C0F522B587DA70076223D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EEAA289E2B5952DB00851176 /* PetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsView.swift; sourceTree = "<group>"; };
@@ -63,9 +60,8 @@
 		EEAA28A82B595DFE00851176 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EEAA28AA2B595E1100851176 /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
 		EEAA28AE2B59724600851176 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		EEAA28B02B59900900851176 /* PetInfoLong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetInfoLong.swift; sourceTree = "<group>"; };
+		EEAA28B02B59900900851176 /* PetInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetInfo.swift; sourceTree = "<group>"; };
 		EEAA28B42B59939000851176 /* StyleModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleModifiers.swift; sourceTree = "<group>"; };
-		EEAA28B62B5AF52600851176 /* DynamicPetInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicPetInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,9 +195,7 @@
 		EEAA28AD2B595E4F00851176 /* Card Views */ = {
 			isa = PBXGroup;
 			children = (
-				EE5C0F4E2B58754E0076223D /* PetInfoShort.swift */,
-				EEAA28B02B59900900851176 /* PetInfoLong.swift */,
-				EEAA28B62B5AF52600851176 /* DynamicPetInfo.swift */,
+				EEAA28B02B59900900851176 /* PetInfo.swift */,
 				EEAA28A02B595AD400851176 /* TabBar.swift */,
 			);
 			path = "Card Views";
@@ -349,10 +343,8 @@
 				EEAA28A92B595DFE00851176 /* HomeView.swift in Sources */,
 				EE5C0F512B587CBE0076223D /* ViewModifiers.swift in Sources */,
 				EE15C4732B56E73300A8DE52 /* Model.swift in Sources */,
-				EEAA28B72B5AF52600851176 /* DynamicPetInfo.swift in Sources */,
 				EEAA28A12B595AD400851176 /* TabBar.swift in Sources */,
-				EE5C0F4F2B58754E0076223D /* PetInfoShort.swift in Sources */,
-				EEAA28B12B59900900851176 /* PetInfoLong.swift in Sources */,
+				EEAA28B12B59900900851176 /* PetInfo.swift in Sources */,
 				EE15C4452B56E18D00A8DE52 /* VetMyPetApp.swift in Sources */,
 				EEAA28AF2B59724600851176 /* ContentView.swift in Sources */,
 				EEAA289F2B5952DB00851176 /* PetsView.swift in Sources */,
