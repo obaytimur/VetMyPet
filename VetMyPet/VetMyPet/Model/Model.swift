@@ -10,23 +10,28 @@ import Foundation
 struct Pet: Identifiable {
     var id = UUID()
     var name: String
-    var birthday: Date
+    var birthday: Date = Date.now
+    var birthdayAsString: String
     var sex: Sex
-    var age: Int {
+    var age: [Int] {
         calculateAge()
     }
     
-    private func calculateAge() -> Int {
-            let calendar = Calendar.current
-            let currentDate = Date()
-            let components = calendar.dateComponents([.year], from: birthday, to: currentDate)
-            return components.year ?? 0
+    private func calculateAge() -> [Int] {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MM/yyyy"
+        let birthday = formatter.date(from: birthdayAsString) ?? Date()
+        let calendar = Calendar.current
+        let currentDate = Date()
+        let componentsYear = calendar.dateComponents([.year], from: birthday, to: currentDate)
+        let componentsMonth = calendar.dateComponents([.month], from: birthday, to: currentDate)
+        return [componentsYear.year ?? 0, componentsMonth.month ?? 0]
         }
     
-    init(id: UUID = UUID(), name: String, birthday: Date, sex: Sex) {
+    init(id: UUID = UUID(), name: String, birthdayAsString: String, sex: Sex) {
         self.id = id
         self.name = name
-        self.birthday = birthday
+        self.birthdayAsString = birthdayAsString
         self.sex = sex
     }
 }

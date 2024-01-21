@@ -21,28 +21,20 @@ struct PetInfoCardShortModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .frame(maxWidth: ViewConstants.petInfoShortWidth, maxHeight: ViewConstants.petInfoShortHeight)
-            .background(RoundedRectangle(cornerRadius: 15).fill(Color(hex: 0xEBF2FD)))
-            .clipShape(RoundedRectangle(cornerRadius: 15))
-            .padding()
+            .background(Color(hex: 0xEBF2FD))
+
     }
 }
 
 struct PetInfoCardLongModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .frame(maxWidth: ViewConstants.petInfoLongWidth, maxHeight: ViewConstants.petInfoLongHeight)
+            .frame(maxWidth: ViewConstants.petInfoLongWidth)
             .background(RoundedRectangle(cornerRadius: 15).fill(Color(hex: 0xFFFFFF)))
             .clipShape(RoundedRectangle(cornerRadius: 15))
-            .padding()
+            .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/ .opacity(0.4), radius: 1)
+        
 
-    }
-}
-
-struct cornerFlatterModifier: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-        .background(RoundedRectangle(cornerRadius: 0).fill(Color(hex: 0xEBF2FD)))
-        .clipShape(RoundedRectangle(cornerRadius: 0))
     }
 }
 
@@ -52,9 +44,6 @@ extension View{
     }
     func PetInfoCardLongCard() -> some View {
         modifier(PetInfoCardLongModifier())
-    }
-    func cornerFlatter() -> some View {
-        modifier(cornerFlatterModifier())
     }
 }
 
