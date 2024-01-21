@@ -27,13 +27,13 @@ struct PetInfoShort_Preview: PreviewProvider {
 extension PetInfoShort {
     private var cardViewShort: some View {
         HStack{
-            Image("lotusImg")
+            Image(pet.name)
                 .clipShape(Circle())
                 .padding(.leading)
             VStack(alignment: .leading) {
                 Text(pet.name)
                     .font(.system(size: 24))
-                Text("4 years, 9 months old")
+                Text(pet.age[0] != 0 ? "\(pet.age[0]) years and \(pet.age[1]) months" : "\(pet.age[1]) months")
                     .font(.system(size: 16))
                     .padding(.top, -6)
             }

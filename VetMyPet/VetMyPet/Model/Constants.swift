@@ -9,7 +9,7 @@ import Foundation
 
 enum VariableConstants {
     static let ExPet = Pet(name: "Lotus", birthday: Date.now, sex: .female)
-    static let ExPet2 = Pet(name: "Lotus", birthday: Date.now, sex: .female)
+    static let ExPet2 = Pet(name: "Boncuk", birthday: Date.now, sex: .female)
     
     static let PetArray = [ExPet, ExPet2]
 }
