@@ -36,7 +36,7 @@ extension PetInfoLong {
                 Text("Birthday")
                     .subTitle()
                     .padding(.top, -1)
-                Text("\(pet.birthday.formatted())")
+                Text(pet.birthdayAsString)
                     .infoText()
                     .padding(.top, -4)
             }

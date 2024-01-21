@@ -33,7 +33,7 @@ extension PetInfoShort {
             VStack(alignment: .leading) {
                 Text(pet.name)
                     .font(.system(size: 24))
-                Text(pet.age[0] != 0 ? "\(pet.age[0]) years and \(pet.age[1]) months" : "\(pet.age[1]) months")
+                Text(pet.age[0] != 0 ? "\(pet.age[0]) years and \(pet.age[1]%12) months old" : "\(pet.age[1]%12) months old")
                     .font(.system(size: 16))
                     .padding(.top, -6)
             }
