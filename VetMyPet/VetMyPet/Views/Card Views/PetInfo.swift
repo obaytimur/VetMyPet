@@ -49,6 +49,7 @@ extension PetInfoLong {
             .padding(.leading, 10)
             Spacer()
             Image("downArrowIcon")
+                .rotationEffect(.degrees(isExtended ? 180 : 0))
                 .padding(.trailing)
         }
     }
