@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Pet: Identifiable {
+struct Pet: Identifiable, Hashable {
     var id = UUID()
     var name: String
     var birthday: Date = Date.now
@@ -16,6 +16,7 @@ struct Pet: Identifiable {
     var age: [Int] {
         calculateAge()
     }
+    var weight: [Int] = Array()
     
     private func calculateAge() -> [Int] {
         let formatter = DateFormatter()
@@ -33,6 +34,10 @@ struct Pet: Identifiable {
         self.name = name
         self.birthdayAsString = birthdayAsString
         self.sex = sex
+    }
+    
+    mutating func addWeight(weight: Int) {
+        self.weight.append(weight)
     }
 }
 

@@ -16,6 +16,8 @@
 		EE15C4732B56E73300A8DE52 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE15C4722B56E73300A8DE52 /* Model.swift */; };
 		EE5C0F512B587CBE0076223D /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C0F502B587CBE0076223D /* ViewModifiers.swift */; };
 		EE5C0F532B587DA70076223D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C0F522B587DA70076223D /* Constants.swift */; };
+		EE84CCF02B5FD0FD00D2DA4F /* PetPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE84CCEF2B5FD0FD00D2DA4F /* PetPickerView.swift */; };
+		EE84CCF52B5FE97500D2DA4F /* PetHealthTrackersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE84CCF42B5FE97500D2DA4F /* PetHealthTrackersView.swift */; };
 		EEAA289F2B5952DB00851176 /* PetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA289E2B5952DB00851176 /* PetsView.swift */; };
 		EEAA28A12B595AD400851176 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28A02B595AD400851176 /* TabBar.swift */; };
 		EEAA28A92B595DFE00851176 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28A82B595DFE00851176 /* HomeView.swift */; };
@@ -55,6 +57,8 @@
 		EE15C4722B56E73300A8DE52 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		EE5C0F502B587CBE0076223D /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		EE5C0F522B587DA70076223D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EE84CCEF2B5FD0FD00D2DA4F /* PetPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetPickerView.swift; sourceTree = "<group>"; };
+		EE84CCF42B5FE97500D2DA4F /* PetHealthTrackersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetHealthTrackersView.swift; sourceTree = "<group>"; };
 		EEAA289E2B5952DB00851176 /* PetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsView.swift; sourceTree = "<group>"; };
 		EEAA28A02B595AD400851176 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		EEAA28A82B595DFE00851176 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -182,12 +186,38 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		EE84CCF12B5FE8E800D2DA4F /* HomeHelperViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeHelperViews;
+			sourceTree = "<group>";
+		};
+		EE84CCF22B5FE8F300D2DA4F /* HealthHelperViews */ = {
+			isa = PBXGroup;
+			children = (
+				EE84CCEF2B5FD0FD00D2DA4F /* PetPickerView.swift */,
+				EE84CCF42B5FE97500D2DA4F /* PetHealthTrackersView.swift */,
+			);
+			path = HealthHelperViews;
+			sourceTree = "<group>";
+		};
+		EE84CCF32B5FE8FE00D2DA4F /* PetsHelperViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PetsHelperViews;
+			sourceTree = "<group>";
+		};
 		EEAA28AC2B595E2A00851176 /* Main Views */ = {
 			isa = PBXGroup;
 			children = (
 				EEAA28A82B595DFE00851176 /* HomeView.swift */,
+				EE84CCF12B5FE8E800D2DA4F /* HomeHelperViews */,
 				EEAA28AA2B595E1100851176 /* HealthView.swift */,
+				EE84CCF22B5FE8F300D2DA4F /* HealthHelperViews */,
 				EEAA289E2B5952DB00851176 /* PetsView.swift */,
+				EE84CCF32B5FE8FE00D2DA4F /* PetsHelperViews */,
 			);
 			path = "Main Views";
 			sourceTree = "<group>";
@@ -344,7 +374,9 @@
 				EE5C0F512B587CBE0076223D /* ViewModifiers.swift in Sources */,
 				EE15C4732B56E73300A8DE52 /* Model.swift in Sources */,
 				EEAA28A12B595AD400851176 /* TabBar.swift in Sources */,
+				EE84CCF02B5FD0FD00D2DA4F /* PetPickerView.swift in Sources */,
 				EEAA28B12B59900900851176 /* PetInfo.swift in Sources */,
+				EE84CCF52B5FE97500D2DA4F /* PetHealthTrackersView.swift in Sources */,
 				EE15C4452B56E18D00A8DE52 /* VetMyPetApp.swift in Sources */,
 				EEAA28AF2B59724600851176 /* ContentView.swift in Sources */,
 				EEAA289F2B5952DB00851176 /* PetsView.swift in Sources */,

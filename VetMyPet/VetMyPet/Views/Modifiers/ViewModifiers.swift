@@ -38,12 +38,25 @@ struct PetInfoCardLongModifier: ViewModifier {
     }
 }
 
+struct PetHealthCardModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .frame(maxWidth: ViewConstants.petHealthInfoWidth)
+            .background(.white)
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+            .shadow(color: .black.opacity(0.18), radius: 3.55)
+    }
+}
+
 extension View{
     func PetInfoCardShortCard() -> some View {
         modifier(PetInfoCardShortModifier())
     }
     func PetInfoCardLongCard() -> some View {
         modifier(PetInfoCardLongModifier())
+    }
+    func PetHealthCard() -> some View {
+        modifier(PetHealthCardModifier())
     }
 }
 

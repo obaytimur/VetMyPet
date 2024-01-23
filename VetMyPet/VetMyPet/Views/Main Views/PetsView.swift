@@ -27,7 +27,8 @@ struct PetsView_Preview: PreviewProvider {
     }
 }
 
-extension PetsView {     private var listView: some View {
+extension PetsView {     
+    private var listView: some View {
         VStack {
             ForEach(VariableConstants.PetArray) { pet in
                 HStack {
