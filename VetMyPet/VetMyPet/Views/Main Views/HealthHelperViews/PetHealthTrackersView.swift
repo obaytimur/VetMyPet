@@ -9,11 +9,6 @@ import SwiftUI
 
 struct PetHealthTrackersView: View {
     
-    @State private var isExtendedHealth = false
-    @State private var isExtendedVaccine = false
-    @State private var isExtendedVets = false
-
-    
     @Binding var pet: Pet
     
     var body: some View {
@@ -36,7 +31,7 @@ struct PetHealthTrackersView_Preview: PreviewProvider {
 
 extension PetHealthTrackersView {
     private var weightView: some View{
-        VStack {
+        VStack(alignment: .leading) {
             HStack {
                 VStack(alignment: .leading, spacing: 4){
                     Text("Weight")
@@ -45,34 +40,22 @@ extension PetHealthTrackersView {
                         .kerning(0.15)
                         .foregroundColor(Color(red: 0.11, green: 0.11, blue: 0.13))
                     Text(pet.weight.isEmpty ? "\(pet.name) has no weight data" : String(pet.weight.last!))
-                      .font(Font.custom("Plus Jakarta Sans", size: 14))
-                      .kerning(0.25)
-                      .foregroundColor(Color(red: 0.11, green: 0.11, blue: 0.13))
+                        .font(Font.custom("Plus Jakarta Sans", size: 14))
+                        .kerning(0.25)
+                        .foregroundColor(Color(red: 0.11, green: 0.11, blue: 0.13))
                 }
                 Spacer()
-                Image("downArrowIcon")
-                    .rotationEffect(Angle(degrees: isExtendedHealth ? 180 : 0))
-            }
-            .contentShape(Rectangle())
-            .onTapGesture {
-                withAnimation(.easeIn(duration: 0.25)) {
-                    isExtendedHealth.toggle()
-                }
             }
             .padding()
-            if isExtendedHealth {
-                VStack {
-                    Text("Some Information")
-                }
+            Text("Some Information")
                 .padding()
-            }
         }
     }
 }
 
 extension PetHealthTrackersView {
     private var vaccineView: some View{
-        VStack {
+        VStack(alignment: .leading) {
             HStack {
                 VStack(alignment: .leading, spacing: 4){
                     Text("Vaccines")
@@ -86,29 +69,17 @@ extension PetHealthTrackersView {
                       .foregroundColor(Color(red: 0.11, green: 0.11, blue: 0.13))
                 }
                 Spacer()
-                Image("downArrowIcon")
-                    .rotationEffect(Angle(degrees: isExtendedVaccine ? 180 : 0))
-            }
-            .contentShape(Rectangle())
-            .onTapGesture {
-                withAnimation(.easeIn(duration: 0.25)) {
-                    isExtendedVaccine.toggle()
-                }
             }
             .padding()
-            if isExtendedVaccine {
-                VStack {
-                    Text("Some Information")
-                }
+            Text("Some Information")
                 .padding()
-            }
         }
     }
 }
 
 extension PetHealthTrackersView {
     private var vetsView: some View{
-        VStack {
+        VStack(alignment: .leading) {
             HStack {
                 VStack(alignment: .leading, spacing: 4){
                     Text("Vet Visits")
@@ -122,22 +93,10 @@ extension PetHealthTrackersView {
                       .foregroundColor(Color(red: 0.11, green: 0.11, blue: 0.13))
                 }
                 Spacer()
-                Image("downArrowIcon")
-                    .rotationEffect(Angle(degrees: isExtendedVets ? 180 : 0))
-            }
-            .contentShape(Rectangle())
-            .onTapGesture {
-                withAnimation(.easeIn(duration: 0.25)) {
-                    isExtendedVets.toggle()
-                }
             }
             .padding()
-            if isExtendedVets {
-                VStack {
-                    Text("Some Information")
-                }
+            Text("Some Information")
                 .padding()
-            }
         }
     }
 }
