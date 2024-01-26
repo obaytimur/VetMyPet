@@ -20,7 +20,7 @@ struct ContentView: View {
                 TabView(selection: $selectedTab) {
                     HomeView()
                         .tag(Tabs.Home)
-                    HealthView(pets: VariableConstants.PetArray)
+                    HealthView(pets: VariableConstants.PetArray, selection: VariableConstants.PetArray.first!)
                         .tag(Tabs.Health)
                     PetsView(pets: VariableConstants.PetArray)
                         .tag(Tabs.Pets)

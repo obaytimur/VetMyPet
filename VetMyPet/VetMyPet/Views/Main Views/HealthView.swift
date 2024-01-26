@@ -10,7 +10,7 @@ import SwiftUI
 struct HealthView: View {
     
     @State var pets: [Pet]
-    @State private var selection: Pet = VariableConstants.ExPet
+    @State var selection : Pet
     
     var body: some View {
         NavigationStack{
@@ -30,16 +30,15 @@ struct HealthView: View {
 
 struct HealthView_Preview: PreviewProvider {
     static var previews: some View {
-        HealthView(pets: VariableConstants.PetArray)
+        HealthView(pets: VariableConstants.PetArray, selection: VariableConstants.PetArray.first!)
     }
 }
 
 extension HealthView {
     private var pickerView: some View {
         Picker("Pets", selection: $selection) {
-            ForEach(self.pets) { pet in
+            ForEach(self.pets, id: \.self) { pet in
                 Text(pet.name)
-                    .tag(pet as Pet?)
             }
         }
         .tint(Color(red: 0.11, green: 0.1, blue: 0.17))
