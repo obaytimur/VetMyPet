@@ -41,8 +41,14 @@ struct Pet: Identifiable, Hashable {
     }
 }
 
+extension Pet {
+    static var emptyPet: Pet {
+        Pet(name: "", birthdayAsString: "", sex: .notMentioned)
+    }
+}
+
 enum Sex {
-    case female, male
+    case female, male, notMentioned
 }
 enum CatBreed: String, CaseIterable {
     case Tekir = "Tekir"

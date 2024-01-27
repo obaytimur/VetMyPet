@@ -13,7 +13,7 @@
 		EE15C4562B56E18E00A8DE52 /* VetMyPetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE15C4552B56E18E00A8DE52 /* VetMyPetTests.swift */; };
 		EE15C4602B56E18E00A8DE52 /* VetMyPetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE15C45F2B56E18E00A8DE52 /* VetMyPetUITests.swift */; };
 		EE15C4622B56E18E00A8DE52 /* VetMyPetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE15C4612B56E18E00A8DE52 /* VetMyPetUITestsLaunchTests.swift */; };
-		EE15C4732B56E73300A8DE52 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE15C4722B56E73300A8DE52 /* Model.swift */; };
+		EE15C4732B56E73300A8DE52 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE15C4722B56E73300A8DE52 /* Pet.swift */; };
 		EE5C0F512B587CBE0076223D /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C0F502B587CBE0076223D /* ViewModifiers.swift */; };
 		EE5C0F532B587DA70076223D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C0F522B587DA70076223D /* Constants.swift */; };
 		EE84CCF52B5FE97500D2DA4F /* PetHealthTrackersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE84CCF42B5FE97500D2DA4F /* PetHealthTrackersView.swift */; };
@@ -24,6 +24,8 @@
 		EEAA28AF2B59724600851176 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28AE2B59724600851176 /* ContentView.swift */; };
 		EEAA28B12B59900900851176 /* PetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28B02B59900900851176 /* PetInfo.swift */; };
 		EEAA28B52B59939000851176 /* StyleModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28B42B59939000851176 /* StyleModifiers.swift */; };
+		EEB6FE112B64F83500F24EF8 /* NewPetSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB6FE102B64F83500F24EF8 /* NewPetSheetView.swift */; };
+		EEB6FE132B64FE4300F24EF8 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB6FE122B64FE4300F24EF8 /* DetailEditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +55,7 @@
 		EE15C45B2B56E18E00A8DE52 /* VetMyPetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VetMyPetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE15C45F2B56E18E00A8DE52 /* VetMyPetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetMyPetUITests.swift; sourceTree = "<group>"; };
 		EE15C4612B56E18E00A8DE52 /* VetMyPetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetMyPetUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		EE15C4722B56E73300A8DE52 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		EE15C4722B56E73300A8DE52 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		EE5C0F502B587CBE0076223D /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		EE5C0F522B587DA70076223D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EE84CCF42B5FE97500D2DA4F /* PetHealthTrackersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetHealthTrackersView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,8 @@
 		EEAA28AE2B59724600851176 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EEAA28B02B59900900851176 /* PetInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetInfo.swift; sourceTree = "<group>"; };
 		EEAA28B42B59939000851176 /* StyleModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleModifiers.swift; sourceTree = "<group>"; };
+		EEB6FE102B64F83500F24EF8 /* NewPetSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPetSheetView.swift; sourceTree = "<group>"; };
+		EEB6FE122B64FE4300F24EF8 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +157,7 @@
 		EE15C46E2B56E33200A8DE52 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EE15C4722B56E73300A8DE52 /* Model.swift */,
+				EE15C4722B56E73300A8DE52 /* Pet.swift */,
 				EE5C0F522B587DA70076223D /* Constants.swift */,
 			);
 			path = Model;
@@ -215,6 +219,8 @@
 				EE84CCF22B5FE8F300D2DA4F /* HealthHelperViews */,
 				EEAA289E2B5952DB00851176 /* PetsView.swift */,
 				EE84CCF32B5FE8FE00D2DA4F /* PetsHelperViews */,
+				EEB6FE102B64F83500F24EF8 /* NewPetSheetView.swift */,
+				EEB6FE122B64FE4300F24EF8 /* DetailEditView.swift */,
 			);
 			path = "Main Views";
 			sourceTree = "<group>";
@@ -368,13 +374,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEAA28A92B595DFE00851176 /* HomeView.swift in Sources */,
+				EEB6FE112B64F83500F24EF8 /* NewPetSheetView.swift in Sources */,
 				EE5C0F512B587CBE0076223D /* ViewModifiers.swift in Sources */,
-				EE15C4732B56E73300A8DE52 /* Model.swift in Sources */,
+				EE15C4732B56E73300A8DE52 /* Pet.swift in Sources */,
 				EEAA28A12B595AD400851176 /* TabBar.swift in Sources */,
 				EEAA28B12B59900900851176 /* PetInfo.swift in Sources */,
 				EE84CCF52B5FE97500D2DA4F /* PetHealthTrackersView.swift in Sources */,
 				EE15C4452B56E18D00A8DE52 /* VetMyPetApp.swift in Sources */,
 				EEAA28AF2B59724600851176 /* ContentView.swift in Sources */,
+				EEB6FE132B64FE4300F24EF8 /* DetailEditView.swift in Sources */,
 				EEAA289F2B5952DB00851176 /* PetsView.swift in Sources */,
 				EEAA28AB2B595E1100851176 /* HealthView.swift in Sources */,
 				EEAA28B52B59939000851176 /* StyleModifiers.swift in Sources */,

@@ -9,7 +9,8 @@ import SwiftUI
 
 struct PetsView: View {
     
-    var pets: [Pet]
+    @State var pets: [Pet]
+    @State var isNewPetSheet = false
     
     var body: some View {
         NavigationStack{
@@ -17,6 +18,12 @@ struct PetsView: View {
                 listView
             }
             .navigationTitle("Pets")
+            .toolbar {
+                addPetButton
+            }
+            .sheet(isPresented: $isNewPetSheet) {
+                NewPetSheetView(pets: $pets, isPresentingNewPetView: $isNewPetSheet)
+            }
         }
     }
 }
@@ -36,6 +43,18 @@ extension PetsView {
                 }
             }
             Spacer()
+        }
+    }
+}
+
+extension PetsView {
+    private var addPetButton: some View {
+        Button() {
+            isNewPetSheet = true
+        } label: {
+            Image(systemName: "plus")
+                .foregroundStyle(Color.black)
+                .frame(width: 24, height: 24)
         }
     }
 }
