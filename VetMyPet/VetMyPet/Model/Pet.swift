@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Pet: Identifiable, Hashable {
+struct Pet: Identifiable, Hashable, Codable {
     var id = UUID()
     var name: String
     var birthday: Date = Date.now
@@ -47,8 +47,10 @@ extension Pet {
     }
 }
 
-enum Sex {
-    case female, male, notMentioned
+enum Sex: Codable {
+    case female
+    case male
+    case notMentioned
 }
 enum CatBreed: String, CaseIterable {
     case Tekir = "Tekir"

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PetsView: View {
     
-    @State var pets: [Pet]
+    @Binding var pets: [Pet]
     @State var isNewPetSheet = false
     
     var body: some View {
@@ -30,14 +30,14 @@ struct PetsView: View {
 
 struct PetsView_Preview: PreviewProvider {
     static var previews: some View {
-        PetsView(pets: VariableConstants.PetArray)
+        PetsView(pets: .constant(VariableConstants.PetArray))
     }
 }
 
 extension PetsView {     
     private var listView: some View {
         VStack {
-            ForEach(VariableConstants.PetArray) { pet in
+            ForEach(pets) { pet in
                 HStack {
                     PetInfoLong (pet: pet)
                 }

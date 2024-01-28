@@ -15,7 +15,7 @@ struct NewPetSheetView: View {
     
     var body: some View {
         NavigationStack {
-            DetailEditView()
+            DetailEditView(pet: $newPet)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Dismiss") {
@@ -24,6 +24,7 @@ struct NewPetSheetView: View {
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Add") {
+                        pets.append(newPet)
                         isPresentingNewPetView = false
                     }
                 }

@@ -17,6 +17,9 @@
 		EE5C0F512B587CBE0076223D /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C0F502B587CBE0076223D /* ViewModifiers.swift */; };
 		EE5C0F532B587DA70076223D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5C0F522B587DA70076223D /* Constants.swift */; };
 		EE84CCF52B5FE97500D2DA4F /* PetHealthTrackersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE84CCF42B5FE97500D2DA4F /* PetHealthTrackersView.swift */; };
+		EEA494E92B657A7A0052CA87 /* PetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA494E82B657A7A0052CA87 /* PetStore.swift */; };
+		EEA494EB2B664E160052CA87 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA494EA2B664E160052CA87 /* ErrorWrapper.swift */; };
+		EEA494ED2B664E390052CA87 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA494EC2B664E390052CA87 /* ErrorView.swift */; };
 		EEAA289F2B5952DB00851176 /* PetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA289E2B5952DB00851176 /* PetsView.swift */; };
 		EEAA28A12B595AD400851176 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28A02B595AD400851176 /* TabBar.swift */; };
 		EEAA28A92B595DFE00851176 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA28A82B595DFE00851176 /* HomeView.swift */; };
@@ -59,6 +62,9 @@
 		EE5C0F502B587CBE0076223D /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		EE5C0F522B587DA70076223D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EE84CCF42B5FE97500D2DA4F /* PetHealthTrackersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetHealthTrackersView.swift; sourceTree = "<group>"; };
+		EEA494E82B657A7A0052CA87 /* PetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetStore.swift; sourceTree = "<group>"; };
+		EEA494EA2B664E160052CA87 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
+		EEA494EC2B664E390052CA87 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		EEAA289E2B5952DB00851176 /* PetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsView.swift; sourceTree = "<group>"; };
 		EEAA28A02B595AD400851176 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		EEAA28A82B595DFE00851176 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -159,6 +165,8 @@
 			children = (
 				EE15C4722B56E73300A8DE52 /* Pet.swift */,
 				EE5C0F522B587DA70076223D /* Constants.swift */,
+				EEA494E82B657A7A0052CA87 /* PetStore.swift */,
+				EEA494EA2B664E160052CA87 /* ErrorWrapper.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				EEAA28AE2B59724600851176 /* ContentView.swift */,
+				EEA494EC2B664E390052CA87 /* ErrorView.swift */,
 				EEAA28AC2B595E2A00851176 /* Main Views */,
 				EEAA28AD2B595E4F00851176 /* Card Views */,
 				EEAA28B22B59936C00851176 /* Modifiers */,
@@ -373,13 +382,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA494E92B657A7A0052CA87 /* PetStore.swift in Sources */,
 				EEAA28A92B595DFE00851176 /* HomeView.swift in Sources */,
 				EEB6FE112B64F83500F24EF8 /* NewPetSheetView.swift in Sources */,
 				EE5C0F512B587CBE0076223D /* ViewModifiers.swift in Sources */,
+				EEA494ED2B664E390052CA87 /* ErrorView.swift in Sources */,
 				EE15C4732B56E73300A8DE52 /* Pet.swift in Sources */,
 				EEAA28A12B595AD400851176 /* TabBar.swift in Sources */,
 				EEAA28B12B59900900851176 /* PetInfo.swift in Sources */,
 				EE84CCF52B5FE97500D2DA4F /* PetHealthTrackersView.swift in Sources */,
+				EEA494EB2B664E160052CA87 /* ErrorWrapper.swift in Sources */,
 				EE15C4452B56E18D00A8DE52 /* VetMyPetApp.swift in Sources */,
 				EEAA28AF2B59724600851176 /* ContentView.swift in Sources */,
 				EEB6FE132B64FE4300F24EF8 /* DetailEditView.swift in Sources */,

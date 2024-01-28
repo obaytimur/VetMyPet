@@ -9,10 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selectedTab: Tabs = .Home
+    @Binding var pets: [Pet]
+    @Environment(\.scenePhase) private var scenePhase
+    let saveAction: ()-> Void
     
-    init() {
-        UITabBar.appearance().isHidden = true
-    }
+    
     
     var body: some View {
         ZStack {
@@ -20,9 +21,9 @@ struct ContentView: View {
                 TabView(selection: $selectedTab) {
                     HomeView()
                         .tag(Tabs.Home)
-                    HealthView(pets: VariableConstants.PetArray, selection: VariableConstants.PetArray.first!)
+                    HealthView(pets: $pets)
                         .tag(Tabs.Health)
-                    PetsView(pets: VariableConstants.PetArray)
+                    PetsView(pets: $pets)
                         .tag(Tabs.Pets)
                 }
             }
@@ -31,11 +32,14 @@ struct ContentView: View {
                 TabBar(selectedTab: $selectedTab)
             }
         }
+        .onChange(of: scenePhase) {phase, otherPhase in
+            if phase == .inactive { saveAction()}
+        }
     }
 }
 
 struct ContentView_Preview: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(pets: .constant(VariableConstants.PetArray), saveAction: {})
     }
 }

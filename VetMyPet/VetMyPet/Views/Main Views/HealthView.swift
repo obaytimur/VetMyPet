@@ -9,28 +9,37 @@ import SwiftUI
 
 struct HealthView: View {
     
-    @State var pets: [Pet]
-    @State var selection : Pet
+    @Binding var pets: [Pet]
+    @State private var selection = Pet.emptyPet
+
     
     var body: some View {
         NavigationStack{
-            VStack(alignment: .leading) {
-                HStack{
-                    pickerView
-                    Spacer()
+            VStack {
+                if pets.isEmpty {
+                    VStack{
+                        Text("No Pet")
+                    }
+                } else {
+                    VStack(alignment: .leading) {
+                        HStack{
+                            pickerView
+                            Spacer()
+                        }
+                        PetHealthTrackersView(pet: $selection)
+                            .padding()
+                        Spacer()
+                    }
                 }
-                PetHealthTrackersView(pet: $selection)
-                    .padding()
-                Spacer()
             }
             .navigationTitle("Health")
         }
+        }
     }
-}
 
 struct HealthView_Preview: PreviewProvider {
     static var previews: some View {
-        HealthView(pets: VariableConstants.PetArray, selection: VariableConstants.PetArray.first!)
+        HealthView(pets: .constant(VariableConstants.PetArray))
     }
 }
 
