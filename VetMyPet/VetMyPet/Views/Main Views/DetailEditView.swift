@@ -10,12 +10,40 @@ import SwiftUI
 struct DetailEditView: View {
     
     @Binding var pet: Pet
-    @State private var newPetName = ""
+    @State var sexOfPet: Sex = .notMentioned
+    @State private var breed: Breed = .notMentioned
     
     var body: some View {
         Form {
             Section(header: Text("Pet Info")) {
-                TextField("Name", text: $pet.name)
+                HStack{
+                    Text("Pet Name:")
+                    Spacer()
+                    TextField("Eg. Duman", text: $pet.name)
+                        .multilineTextAlignment(.trailing)
+                }
+                DatePicker(
+                    "Birthday:",
+                    selection: $pet.birthday,
+                    displayedComponents: [.date]
+                    )
+                Picker("Sex",selection: $pet.sex){
+                    ForEach(Sex.allCases, id: \.self) {sex in
+                        Text(String(describing: sex))
+                    }
+                }
+                Picker("Animal Type", selection: $pet.animalType){
+                    ForEach(AnimalType.allCases, id: \.self) { type in
+                        Text(String(describing: type))
+                    }
+                }
+                if pet.animalType != .notMentioned {
+                    Picker("Breed", selection: $pet.breed){
+                        ForEach(Breed.Cat.allCases, id: \.self) { breed in
+                            Text(String(describing: breed))
+                        }
+                    }
+                }
             }
         }
     }

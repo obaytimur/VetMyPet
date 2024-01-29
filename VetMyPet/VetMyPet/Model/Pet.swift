@@ -10,9 +10,11 @@ import Foundation
 struct Pet: Identifiable, Hashable, Codable {
     var id = UUID()
     var name: String
-    var birthday: Date = Date.now
+    var birthday: Date = Date()
     var birthdayAsString: String
-    var sex: Sex
+    var sex: Sex = .notMentioned
+    var animalType: AnimalType
+    var breed: Breed
     var age: [Int] {
         calculateAge()
     }
@@ -29,11 +31,13 @@ struct Pet: Identifiable, Hashable, Codable {
         return [componentsYear.year ?? 0, componentsMonth.month ?? 0]
         }
     
-    init(id: UUID = UUID(), name: String, birthdayAsString: String, sex: Sex) {
+    init(id: UUID = UUID(), name: String, birthdayAsString: String, sex: Sex, animalType: AnimalType, breed: Breed) {
         self.id = id
         self.name = name
         self.birthdayAsString = birthdayAsString
         self.sex = sex
+        self.animalType = animalType
+        self.breed = breed
     }
     
     mutating func addWeight(weight: Int) {
@@ -43,21 +47,6 @@ struct Pet: Identifiable, Hashable, Codable {
 
 extension Pet {
     static var emptyPet: Pet {
-        Pet(name: "", birthdayAsString: "", sex: .notMentioned)
+        Pet(name: "", birthdayAsString: "", sex: .notMentioned, animalType: .notMentioned, breed: .notMentioned)
     }
-}
-
-enum Sex: Codable {
-    case female
-    case male
-    case notMentioned
-}
-enum CatBreed: String, CaseIterable {
-    case Tekir = "Tekir"
-    case ExoShortHair = "Exotic Shorthair"
-   
-}
-enum DogBreed: String, CaseIterable {
-    case Husky = "Husky"
-    case GoldRet = "Golden Retriever"
 }
