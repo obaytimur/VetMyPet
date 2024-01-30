@@ -14,7 +14,7 @@ struct Pet: Identifiable, Hashable, Codable {
     var birthdayAsString: String
     var sex: Sex = .notMentioned
     var animalType: AnimalType
-    var breed: Breed
+    var breed: String
     var age: [Int] {
         calculateAge()
     }
@@ -31,7 +31,7 @@ struct Pet: Identifiable, Hashable, Codable {
         return [componentsYear.year ?? 0, componentsMonth.month ?? 0]
         }
     
-    init(id: UUID = UUID(), name: String, birthdayAsString: String, sex: Sex, animalType: AnimalType, breed: Breed) {
+    init(id: UUID = UUID(), name: String, birthdayAsString: String, sex: Sex, animalType: AnimalType, breed: String) {
         self.id = id
         self.name = name
         self.birthdayAsString = birthdayAsString
@@ -47,6 +47,6 @@ struct Pet: Identifiable, Hashable, Codable {
 
 extension Pet {
     static var emptyPet: Pet {
-        Pet(name: "", birthdayAsString: "", sex: .notMentioned, animalType: .notMentioned, breed: .notMentioned)
+        Pet(name: "", birthdayAsString: "", sex: .notMentioned, animalType: .notMentioned, breed: "")
     }
 }

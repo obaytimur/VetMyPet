@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PetInfoLong: View {
     
-    let pet: Pet
+    @Binding var pet: Pet
     @State private var isExtended = false
     var body: some View {
         VStack {
@@ -29,7 +29,7 @@ struct PetInfoLong: View {
 
 struct PetInfoLong_Preview: PreviewProvider {
     static var previews: some View {
-        PetInfoLong(pet: VariableConstants.ExPet)
+        PetInfoLong(pet: .constant(VariableConstants.ExPet))
     }
 }
 

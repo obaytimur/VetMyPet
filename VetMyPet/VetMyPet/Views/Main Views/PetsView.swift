@@ -37,7 +37,7 @@ struct PetsView_Preview: PreviewProvider {
 extension PetsView {     
     private var listView: some View {
         VStack {
-            ForEach(pets) { pet in
+            ForEach($pets) { pet in
                 HStack {
                     PetInfoLong (pet: pet)
                 }

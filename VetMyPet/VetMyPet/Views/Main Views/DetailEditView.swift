@@ -11,7 +11,7 @@ struct DetailEditView: View {
     
     @Binding var pet: Pet
     @State var sexOfPet: Sex = .notMentioned
-    @State private var breed: Breed = .notMentioned
+    @State var typeOfPet: AnimalType = .notMentioned
     
     var body: some View {
         Form {
@@ -38,9 +38,10 @@ struct DetailEditView: View {
                     }
                 }
                 if pet.animalType != .notMentioned {
+                    let breedPicker = getBreedArray(animalType: pet.animalType)
                     Picker("Breed", selection: $pet.breed){
-                        ForEach(Breed.Cat.allCases, id: \.self) { breed in
-                            Text(String(describing: breed))
+                        ForEach(breedPicker.indices, id: \.self){ index in
+                            Text("\(breedPicker[index])")
                         }
                     }
                 }
@@ -53,4 +54,13 @@ struct DetailEditView_Previews: PreviewProvider {
     static var previews: some View {
         DetailEditView(pet: .constant(VariableConstants.ExPet))
     }
+}
+
+func getBreedArray(animalType: AnimalType) -> [String] {
+    switch animalType{
+    case AnimalType.notMentioned: return [""]
+    case AnimalType.cat: return Breeds.Cats
+    case AnimalType.dog: return Breeds.Dogs
+    }
+    
 }
